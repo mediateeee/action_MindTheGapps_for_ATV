@@ -33,18 +33,13 @@ This sheet only shows the existing branches. If the repository is not updated la
 
 ### (Android TV only) GApps Variants (copied from LineageOS.org)
 
-Android TV MindTheGapps packages have two variants full and minimal:
+Android TV MindTheGapps packages have two variants **full** and **minimal**:
 
-`full` includes the Google Android TV (note, not Google TV) launcher and
-recommendations applications.
+- `full` includes the Google Android TV (note, not Google TV) launcher and recommendations applications.
+- `minimal` does not replace the included launcher or recommendations, by default LineageOS ATV builds utilize an Android 10 era non-GMS launcher.
 
-`minimal` does not replace the included launcher or recommendations*, by
-default LineageOS ATV builds utilize an Android 10 era non-GMS
-launcher.*
+> **Note:** All shipping devices fit either of these packages, they only exist to provide users the option of opting out of Google’s launcher/recommendations.
 
-Note: All shipping devices fit either of these packages, they only exist
-to provide users the option of opt-ing out of Google's
-launcher/recommendations.
 
 ## How to build
 
