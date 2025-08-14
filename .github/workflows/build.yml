@@ -31,7 +31,7 @@ jobs:
 
     - name: Clone MindTheGapps For AndroidTV
       run: |
-        git clone -b ${{ github.event.inputs.BRANCH } --single-branch https://gitlab.com/MindTheGapps/vendor_gapps_tv.git
+        git clone -b ${{ github.event.inputs.BRANCH }} --single-branch https://gitlab.com/MindTheGapps/vendor_gapps_tv.git
 
     - name: Build GApps for Android TV
       run: |
@@ -44,8 +44,8 @@ jobs:
        files: |
         vendor_gapps_tv/out/MindTheGapps-${{ github.event.inputs.ANDROID_VERSION }}-${{ github.event.inputs.ARCH }}-ATV-*.zip
        name: Mind the GApps For ATV
-       tag_name: ATV-${{ github.event.inputs.ANROID_VERSION }}_${{ github.event.inputs.IMG_NAME }}
-       body: All Mind the GApps versions of ${{ github.event.inputs.ARCH }}_android-${{ github.event.inputs.ANROID_VERSION }} for Android TV
+       tag_name: ATV-${{ github.event.inputs.ANDROID_VERSION }}_${{ github.event.inputs.ARCH }}
+       body: All Mind the GApps versions of ${{ github.event.inputs.ARCH }}_android-${{ github.event.inputs.ANDROID_VERSION }} for Android TV
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
