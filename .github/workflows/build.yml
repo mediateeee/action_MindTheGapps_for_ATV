@@ -45,7 +45,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
        files: |
-        vendor_gapps_tv/out/MindTheGapps-${{ github.event.inputs.ANDROID_VERSION }}-${{ github.event.inputs.ARCH }}-ATV-*.zip
+        vendor_gapps_tv/out/MindTheGapps-${{ github.event.inputs.ANDROID_VERSION }}-${{ github.event.inputs.ARCH }}-ATV-*
        name: Mind the GApps For ATV
        tag_name: ATV-${{ github.event.inputs.ANDROID_VERSION }}_${{ github.event.inputs.ARCH }}
        body: All Mind the GApps versions of ${{ github.event.inputs.ARCH }}_android-${{ github.event.inputs.ANDROID_VERSION }} for Android TV
