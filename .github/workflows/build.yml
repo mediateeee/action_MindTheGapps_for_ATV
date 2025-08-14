@@ -1,8 +1,5 @@
 name: Build GApps for Android TV
 
-on:
-  push:
-    branches: [ main ]
     
   workflow_dispatch:
     inputs:
